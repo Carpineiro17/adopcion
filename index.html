@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Juli</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="claro">
+    <header>
+        <h1>Veterinaria Juli</h1>
+        <input type="radio" id="Claro" name="color" value="claro">
+        <label for="Claro">Claro</label>
+        <input type="radio" id="Oscuro" name="color" value="oscuro">
+        <label for="Oscuro">Oscuro</label>
+    </header>
+    <main>
+        <br></br><br></br><br></br>
+        <img src="imagenes/vete.jpeg" alt="Veterinaria">
+        <h2>Registro de Usuarios</h2>
+        <form id="registro-form">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            <label for="tipo">Tipo de Mascota:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="ave">Ave</option>
+                <option value="otro">Otro</option>
+            </select>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+            
+            <h3>Requisitos para adoptar:</h3>
+            <ul id="requisitos">
+                <li>Llenar el formulario de registro.</li>
+                <li>Comprometerse al cuidado adecuado de la mascota.</li>
+                <li>Pasar una entrevista de adopción.</li>
+                <li>Realizar una visita al hogar previa a la adopción.</li>
+            </ul>
+            
+            <button type="submit">Registrarse</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
